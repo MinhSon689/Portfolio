@@ -1,0 +1,164 @@
+*{ /* reset css*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    min-height: 100vh;
+    color: white;
+    object-fit: contain;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 156, 18, 1) 100%);
+    background-clip: text;
+    color: transparent; 
+}
+
+nav ul {
+    display: flex;
+    max-width: 1200px;
+    gap: 25px;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+}
+
+.button{
+    font-size: 17px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    padding: 25px 10px;
+    border-radius: 25px;
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 156, 18, 1) 100%);
+    border: none;
+    outline: none;
+}
+
+.button:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in;
+    box-shadow: rgb(243, 82, 1) 0px 20px 30px -10px;
+}
+
+/*-----------------Main---------------*/
+
+main{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content > h1{
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.content > h1 > span {
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 156, 18, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+/* select: Psudo classes*/
+.content > p:nth-of-type(1){
+    font-size: 25px;
+    color: whitesmoke;
+}
+.content > p:nth-of-type(2){
+    font-size: 16px;
+    color: rgb(163, 163, 163);
+}
+
+.btn-wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-wrapper > .btn-start:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in;
+    box-shadow: rgb(243, 82, 1) 0px 20px 30px -10px;
+}
+
+.btn-wrapper > .btn-read{
+    color: orange;
+    padding: 25px 10px;
+    background-color: transparent;
+    border-radius: 25px;
+    outline: none;
+    border: 1px orange solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-wrapper > .btn-read::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 156, 18, 1) 100%);
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.4s ease-in;
+    z-index: -1;
+}
+
+.btn-wrapper > .btn-read:hover{
+    color: white;
+    transition: all 0.4s ease-in;
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in;
+    box-shadow: rgb(243, 82, 1) 0px 20px 30px -10px;
+}
+
+.btn-wrapper > .btn-read:hover::before{
+    width: 100%;
+}
+
+.box-img{
+    width: 50%;
+    /*background-color: orange;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img > img {
+    max-width: 100%;
+    object-fit: contain;
+}
