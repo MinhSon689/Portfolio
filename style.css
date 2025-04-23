@@ -32,6 +32,12 @@ header{
     color: transparent; 
 }
 
+.logo > .avatar:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s ease-in;
+    box-shadow: black 0px 20px 30px -10px;
+}
+
 nav ul {
     display: flex;
     max-width: 1200px;
