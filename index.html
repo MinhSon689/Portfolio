@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="container">
         <header> <!-- Ctrl + shift + p + wrap-->
                 <div class="logo">
-                    <img src="./images/download.png" alt="" style="width: 70px; height: 70px;"> ᴾᴿᴼシℳ₷
+                    <div class="avatar"><img src="./images/download.png" alt="" style="width: 70px; height: 70px;"></div>
+                    <div class="username">ᴾᴿᴼシℳ₷</div>
                 </div>
                 <nav>
                     <ul>
@@ -35,6 +40,13 @@
                     <button class="button">Contact
                         <i class="fa-sharp fa-solid fa-handshake"></i>
                     </button>
+                    <!-- Only show wwhen the screen is 900px -->
+                    <div class="bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+
                 </div>
         </header>
 
@@ -54,5 +66,8 @@
         </main>
     </div>
 
+    <!-- CDN-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
